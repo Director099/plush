@@ -1,0 +1,79 @@
+.information {
+  position: relative;
+
+  &__precent {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .table {
+    background: @white;
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    margin: 0;
+
+    &__name {
+      color: @color-2;
+      font: @font-name;
+      // text-align: center;
+    }
+
+    &__phone {
+      color: @black;
+      font: @font-phone;
+      vertical-align: text-top;
+      transition: @transition-time;
+
+      .fa {
+        color: @color-2;
+      }
+
+      &:hover {
+        color: @color-2;
+        transition: @transition-time;
+      }
+
+      @media(max-width: 1199px) {
+        font-size: 19px;
+      }
+    }
+
+    thead {
+      th {
+        border: none;
+      }
+    }
+
+    tbody {
+      tr {
+        td {
+          // font-family: "Arial", sans-serif;
+          // font-weight: bold;
+          font-size: @font-size;
+          padding: .55rem .75rem;
+          width: 1%;
+          min-width: 200px;
+          color: @black;
+
+          &:last-child {
+            font-family: "Arial", sans-serif;
+            font-weight: bold;
+
+          }
+        }
+      }
+
+      tr:nth-of-type(even) {
+        background: #fbfbfb;
+
+        td {
+          // font-weight: 300;
+          // font-size: 17px;
+          color: @gray-dark;
+        }
+      }
+    }
+  }
+}

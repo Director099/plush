@@ -1,0 +1,29 @@
+.page-header {
+  background: @black url("img/blink.jpg") no-repeat;
+  background-size: cover;
+  text-align: center;
+  border-bottom: 3px solid @color-2;
+
+  &__logo {
+    font: @font-logo__header;
+    vertical-align: bottom;
+    color: @white;
+
+    &:hover {
+      color: @white;
+    }
+
+    @media(max-width: 540px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: 65px;
+    }
+  }
+
+  &__tagline {
+    padding: 20px 0;
+    margin-bottom: 0;
+    color: @white;
+  }
+}

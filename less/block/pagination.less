@@ -1,0 +1,25 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+
+  &__item {
+     &:extend(.page-item);
+  }
+
+  &__link {
+    &:extend(.page-link);
+    color: @black;
+
+    &:hover {
+      color: @black;
+    }
+  }
+
+  &__current {
+    &:extend(.page-link);
+    background: @color-2;
+    color: @white;
+  }
+}

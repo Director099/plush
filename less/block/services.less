@@ -1,0 +1,39 @@
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 70px;
+
+  &__icon {
+    fill: #fff;
+    stroke: #c10535;
+    stroke-width: 2px;
+    margin-left: 5px;
+    margin-top: 3px;
+  }
+
+  li {
+
+    a {
+      display: flex;
+      padding: 10px 15px;
+      background: @color-2;
+      color: @white;
+      text-transform: uppercase;
+      font-size: @font-size;
+      margin: 0 5px 5px 0px;
+      box-shadow: 0 0 5px 1px rgba(0,0,0,0.2);
+
+      span {
+        display: block;
+        margin: -10px -15px -10px 15px;
+        padding: 10px 15px;
+        background: @white;
+        color: @color-2;
+        font-weight: 400;
+      }
+    }
+  }
+}

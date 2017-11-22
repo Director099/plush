@@ -1,0 +1,42 @@
+.tovar {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 30px;
+  background: @white;
+  transition: @transition-time;
+  border: 1px solid #f1f1f1;
+
+  &__img {
+    position: relative;
+    max-width: 252px;
+    width: 115%;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 15px;
+    height: 15px;
+    background: linear-gradient(to top left,rgba(69,69,69,-0.9),rgba(100,100,100,.1) 41%,#fff 60%);
+  }
+
+  &:hover {
+    box-shadow: 0 0 25px 1px rgba(0,0,0,.4);
+  }
+
+  &__percent {
+    position: absolute;
+    left: -12px;
+    bottom: -11px;
+    margin: 0;
+    z-index: 9;
+  }
+
+  @media(max-width: 575px) {
+    flex-direction: column;
+    align-items: center;
+  }
+}

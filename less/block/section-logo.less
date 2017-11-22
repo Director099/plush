@@ -1,0 +1,35 @@
+.section-logo {
+  position: relative;
+  padding: 10px 0;
+  border-top: 1px solid #cecece;
+  border-bottom: 1px solid #dddddd;
+  text-align: center;
+
+  &__logo {
+    text-transform: uppercase;
+    color: @color-title;
+    font-weight: 700;
+
+    span {
+      color: @color-2;
+    }
+  }
+
+  &::after,
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
+
+  &::after {
+    top: 0;
+    box-shadow: 0 2px 5px 1px rgba(0,0,0,.1);
+  }
+
+  &::before {
+    bottom: 0;
+    box-shadow: 0 -2px 5px 1px rgba(0,0,0,.1);
+  }
+}
